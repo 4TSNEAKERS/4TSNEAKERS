@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List - 4T SNEAKERS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #af69ee;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: #ffffff;
+            color: #2e004f;
+            width: 200px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product-item h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+            color: #af69ee;
+            font-weight: 600;
+        }
+
+        .product-item p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #555555;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px 0;
+            color: #af69ee;
+        }
+
+        .btn-cart {
+            background-color: #af69ee;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+        }
+
+        .btn-cart:hover {
+            background-color: #9339dd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Product Price List</h2>
+        <div class="product-list">
+            <!-- Item 1 -->
+            <div class="product-item">
+                <img src="Sepatu_Sport.png" alt="Sport Shoes">
+                <h3>Sport Shoes</h3>
+                <p class="price">Rp 500,000</p>
+                <button class="btn-cart" onclick="addToCart('Sport Shoes')">Masuk Keranjang</button>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="product-item">
+                <img src="Sepatu_Joging.png" alt="Running Shoes">
+                <h3>Running Shoes</h3>
+                <p class="price">Rp 600,000</p>
+                <button class="btn-cart" onclick="addToCart('Running Shoes')">Masuk Keranjang</button>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="product-item">
+                <img src="Sepatu_Futsal.png" alt="Casual Shoes">
+                <h3>Casual Shoes</h3>
+                <p class="price">Rp 450,000</p>
+                <button class="btn-cart" onclick="addToCart('Casual Shoes')">Masuk Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(productName) {
+            alert(productName + " berhasil ditambahkan ke keranjang!");
+            // Logika tambahan untuk menambahkan produk ke keranjang dapat ditambahkan di sini
+        }
+    </script>
+
+</body>
+</html>
